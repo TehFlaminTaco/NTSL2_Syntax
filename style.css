@@ -1,0 +1,74 @@
+textarea{
+  width:100%;
+  border:0;
+  padding:8px;
+  resize: none;
+  display: block;
+  overflow: hidden;
+  height: 64px;
+  color: rgba(0,0,0,0);
+  caret-color: black;
+}
+#underlay{
+  font-family: monospace;
+  display: inline;
+  position: absolute;
+  width: calc(100% - 56px);
+  padding: 8px;
+  top:59px;
+  padding-left: 8px;
+  padding-right: 8px;
+  white-space: pre-wrap;
+  pointer-events: none;
+}
+#editor_holder{
+  border: solid black 4px;
+  border-radius: 8px;
+}
+body{
+  margin:1em;
+}
+h1{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+tok_expression{
+  font-weight: normal;
+  color: black;
+}
+
+tok_comment{
+  color:gray;
+}
+
+tok_function_builder,tok_forloop,tok_whenblock,tok_whileblock,tok_withblock,tok_ifblock,tok_eval{
+  color:black;
+  font-weight: bold;
+}
+
+tok_var{
+  color:blue;
+}
+
+tok_index{
+  color:black;
+}
+
+tok_numberconstant{
+  color:green;
+}
+
+tok_stringconstant{
+  color:green;
+}
+
+tok_return{
+  font-weight: bold;
+  color: blue;
+}
+
+tok_operator{
+  font-weight: normal;
+  color: black;
+}
